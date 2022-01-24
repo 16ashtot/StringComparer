@@ -36,6 +36,7 @@
             this.btnCalculate = new System.Windows.Forms.Button();
             this.lblResult = new System.Windows.Forms.Label();
             this.btnHelp = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblstringComparer
@@ -90,6 +91,7 @@
             this.btnCalculate.TabIndex = 5;
             this.btnCalculate.Text = "calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // lblResult
             // 
@@ -110,11 +112,21 @@
             this.btnHelp.Text = "help";
             this.btnHelp.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(111, 345);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(472, 17);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "label1";
+            // 
             // StringComparer
             // 
+            this.AcceptButton = this.btnHelp;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btnCalculate);
@@ -140,6 +152,7 @@
         private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.Button btnHelp;
+        private System.Windows.Forms.Label label1;
     }
 }
 

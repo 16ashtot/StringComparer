@@ -41,5 +41,10 @@ namespace StringComparer
                 lblResult.Text = "String Y is invalid: " + checker.Message;
             }
         }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
