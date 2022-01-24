@@ -10,11 +10,25 @@ using System.Windows.Forms;
 
 namespace StringComparer
 {
-    public partial class Form1 : Form
+    public partial class StringComparer : Form
     {
-        public Form1()
+        public StringComparer()
         {
             InitializeComponent();
         }
+
+        private void txtStringX_TextChanged(object sender, EventArgs e)
+        {
+            ValidationResult checker = new ValidationResult();
+            if(checker.ValidateUserInput(txtStringX.Text))
+            {
+                lblResult.Text = "String X is valid";
+            } else
+            {
+                lblResult.Text = "String X is invalid: " + checker.Message;
+            }
+        }
+
+
     }
 }

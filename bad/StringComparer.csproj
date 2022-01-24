@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{58882EAD-74F0-430D-B035-4F78FC226412}</ProjectGuid>
+    <ProjectGuid>{1019E670-E2F3-4174-B5C2-B3408E6C378B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>StringComparer</RootNamespace>
     <AssemblyName>StringComparer</AssemblyName>
@@ -54,7 +54,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ValidationResult.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

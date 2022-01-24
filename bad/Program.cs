@@ -16,7 +16,7 @@ namespace StringComparer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StringComparer());
+            Application.Run(new Form1());
         }
     }
 }
