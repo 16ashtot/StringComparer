@@ -29,6 +29,17 @@ namespace StringComparer
             }
         }
 
-
+        private void txtStringY_TextChanged(object sender, EventArgs e)
+        {
+            ValidationResult checker = new ValidationResult();
+            if (checker.ValidateUserInput(txtStringY.Text))
+            {
+                lblResult.Text = "String Y is valid";
+            }
+            else
+            {
+                lblResult.Text = "String Y is invalid: " + checker.Message;
+            }
+        }
     }
 }
